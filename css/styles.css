@@ -1,10 +1,110 @@
-/* Section navigation */
-.section-1 {
-  background-color: #fff;
-  m
+:root {
+  --main-font: "Roboto", sans-serif;
+  --font-nav: "Raleway", sans-serif;
+  --main-text-color: #757575;
+  --title-color: #212121;
+  --dark-bg-text: #ffffff, 60 %;
+  --dark-bg-title-text: #ffffff;
+  --dark-bg: #2f303a;
+  --second-bg: #e5e5e5;
+  --accent-color: #2196f3;
 }
-position: absolute;
-width: 1600px;
-height: 80px;
-left: 0px;
-top: 0px;
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.list {
+  list-style: none;
+}
+.my-header {
+  background-color: var(--dark-bg);
+}
+.page-title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dark-bg-title-text);
+}
+.order-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-title-text);
+  background-color: var(--accent-color);
+}
+.title-h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.title-h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.title-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.title-label-portfolio {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.title-label-dark-bg {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--dark-bg-title-text);
+}
+.footer {
+  background-color: var(--dark-bg);
+}
+.address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--dark-bg-title-text);
+}
+.style-web {
+  font-family: "Raleway";
+  font-weight: 700;
+  color: var(--accent-color);
+}
+.style-studio {
+  font-family: "Raleway";
+  font-weight: 700;
+  color: black;
+}
