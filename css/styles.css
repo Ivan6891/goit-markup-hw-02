@@ -111,12 +111,14 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
 .style-web {
   color: #2196f3;
 }
 .style-studio {
   color: black;
+}
+.style-studio-dark {
+  color: white;
 }
 .address {
   font-family: Roboto;
