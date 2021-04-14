@@ -1,5 +1,5 @@
 :root {
-  --main-font: "Roboto", sans-serif;
+  --main-font: "Roboto", "Raleway", sans-serif;
   --font-nav: "Raleway", sans-serif;
   --main-text-color: #757575;
   --title-color: #212121;
@@ -103,6 +103,16 @@ body {
 .footer {
   background-color: var(--dark-bg);
 }
+.style-web {
+  font-family: var(--font-nav);
+  font-weight: 700;
+  color: var(--accent-color);
+}
+.style-studio {
+  font-family: var(--font-nav);
+  font-weight: 700;
+  color: black;
+}
 .address {
   font-family: Roboto;
   font-style: normal;
@@ -111,14 +121,4 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--dark-bg-title-text);
-}
-.style-web {
-  font-family: "Raleway";
-  font-weight: 700;
-  color: var(--accent-color);
-}
-.style-studio {
-  font-family: "Raleway";
-  font-weight: 700;
-  color: black;
 }
