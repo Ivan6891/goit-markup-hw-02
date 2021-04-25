@@ -32,6 +32,7 @@ body {
 }
 .link:hover,
 .link:focus {
+  cursor: pointer;
   color: var(--accent-color);
 }
 .fonts-link {
