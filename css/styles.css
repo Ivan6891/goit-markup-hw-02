@@ -10,14 +10,98 @@
   --accent-color: #2196f3;
 }
 
+/* html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+html {
+  width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  width: 1200px;
 }
+
+/* main {
+  width: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 /* Стилизация логотипа и ссылок (хедер,футер) */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.list-contacts {
+  display: flex;
+  align-items: center;
+  size: 135px;
+  padding-left: 300px;
+}
+
+.contact-mail {
+  padding-right: 50px;
+}
+
 .link-logo {
   font-family: Raleway;
   font-style: normal;
@@ -25,30 +109,37 @@ body {
   color: inherit;
   text-decoration: none;
 }
+
 .link {
   font-weight: 500;
   color: inherit;
   text-decoration: none;
 }
+
 .link:hover,
 .link:focus {
   cursor: pointer;
   color: var(--accent-color);
 }
+
 .fonts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding-right: 50px;
 }
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-right: 90px;
 }
+
 .style-web {
   font-family: "Raleway";
   font-weight: 700;
@@ -57,6 +148,7 @@ body {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
+
 .style-studio {
   font-family: Raleway;
   font-style: normal;
@@ -66,6 +158,7 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
 }
+
 .style-studio-dark {
   font-family: Raleway;
   font-weight: 700;
@@ -74,13 +167,40 @@ body {
   letter-spacing: 0.03em;
   color: white;
 }
+
 /* Стили списков */
+
 .list {
   list-style: none;
+  display: flex;
+  margin: auto;
 }
-.my-header {
+
+.list-box {
+  display: flex;
+  align-items: center;
+  width: 295px;
+  height: 15px;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.my-section {
   background-color: var(--dark-bg);
+  width: 1200px;
+  height: 600px;
+  display: block;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
+.hero {
+  align-items: center;
+}
+
 .page-title {
   font-family: var(--main-font);
   font-weight: 900;
@@ -89,20 +209,88 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
   color: var(--dark-bg-title-text);
 }
+
 /* кнопки */
+
 .order-button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--dark-bg-title-text);
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
   background-color: var(--accent-color);
+  color: white;
 }
+
+.list-section {
+  width: 1170px;
+  height: 100px;
+  margin-left: 15px;
+  margin-top: 95px;
+  margin-right: 15px;
+  /* outline: 3px solid blueviolet; */
+}
+
+.list-images-work {
+  width: 1170px;
+  height: 386px;
+  margin: auto;
+  margin-top: 95px;
+  margin-bottom: 95px;
+  /* outline: 3px solid rgb(49, 226, 43); */
+}
+
+.image-work {
+  padding-top: 50px;
+  justify-content: space-between;
+}
+
+/* Секция "Наша команда" */
+
+.section-our-team {
+  width: 1200px;
+  height: 648px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f5f4fa;
+  /* outline: 3px solid rgb(226, 43, 171); */
+}
+
+.cards-team {
+  background-color: #ffffff;
+  /* outline: 2px solid green; */
+}
+
+.title-our-team {
+  margin-bottom: 50px;
+}
+
+.list-our-team {
+  height: 368px;
+  display: flex;
+  justify-content: space-between;
+  /* outline: 3px solid tomato; */
+}
+
+.cards-team-shadow {
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -117,6 +305,7 @@ body {
   color: var(--dark-bg-title-text);
   background-color: var(--accent-color);
 }
+
 /* Заголовки и подзаголовки */
 .title-h2 {
   font-weight: bold;
@@ -124,6 +313,11 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  /* width: 376px;
+  height: 42px; */
+
+  /* padding-left: 410px;
+  padding-right: 410px; */
   color: var(--title-color);
 }
 .title-h3 {
@@ -132,12 +326,30 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 10px;
   color: var(--title-color);
+}
+.style-h3-studio {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #212121;
 }
 .title-label {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.title-label-team {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-text-color);
 }
 .title-label-portfolio {
@@ -155,6 +367,12 @@ body {
 /* Футер */
 .footer {
   background-color: var(--dark-bg);
+  height: 252px;
+}
+.container-footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
 }
 .address {
   font-family: Roboto;
@@ -164,6 +382,19 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--dark-bg-text);
+}
+.list-address {
+  display: block;
+  width: 231px;
+  height: 81px;
+  margin-top: 20px;
+}
+.item-list-address {
+  padding-top: 9px;
+}
+.list-footer {
+  display: inline-block;
+  padding-top: 9px;
 }
 .link-footer {
   font-family: Roboto;
