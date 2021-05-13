@@ -10,89 +10,151 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <section>
-        <nav>
-            <a class="link logo" href="./index.html"> <span class="style-web">Web</span><span class="style-studio">Studio</span></a>
-            <ul class="list">
-                <li class="fonts-link"><a class="link" href="./index.html">Студия</a></li>
-                <li class="fonts-link"><a class="link" href="./portfolio.html">Портфолио</a></li>
-                <li class="fonts-link"><a class="link" href="#contacts">Контакты</a></li>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a class="link logo" href="./index.html"> <span class="style-web">Web</span><span
+                        class="style-studio">Studio</span></a>
+                <ul class="list list-box">
+                    <li class="fonts-link"><a class="link" href="./index.html">Студия</a></li>
+                    <li class="fonts-link"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="fonts-link"><a class="link" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="list list-contacts">
+                <li><a class="link contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="list">
-            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-    </section>
-    <main>
-        <section>
-            <ul class="list">
-                <button class="btn link" type="button">Все</button>
-                <button class="btn link" type="button">Веб-сайты</button>
-                <button class="btn link" type="button">Приложения</button>
-                <button class="btn link" type="button">Дизайн</button>
-                <button class="btn link" type="button">Маркетинг</button> 
+        </div>
+    </header>
+
+    <main class="#portfolio">
+        <div class="section-portfolio">
+            <ul class="list list-button">
+                <button class="btn link style-button" type="button">Все</button>
+                <button class="btn link style-button" type="button">Веб-сайты</button>
+                <button class="btn link style-button" type="button">Приложения</button>
+                <button class="btn link style-button" type="button">Дизайн</button>
+                <button class="btn link style-button" type="button">Маркетинг</button> 
             </ul> 
-            <ul class="list">
-                <li>
-                    <img src="./images/img-8.jpg" width="370" height="294" alt="Изображение сайта с фотографиями специалистов">
-                    <h3 class="title-h3">Технокряк</h3>
-                    <p>Веб-сайт</p>
+            <ul class="card-style-ptf">
+                <li class="card-item">
+                    <div class="card-tumb">
+                        <img src="./images/img-8.jpg" width="370" height="294" alt="Изображение сайта с фотографиями специалистов">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Технокряк</h3>
+                        <p>Веб-сайт</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/img-9.jpg" width="370" height="294" alt="Баскетболисты">
-                    <h3 class="title-h3">Постер New Orlean vs Golden Star</h3>
-                    <p>Дизайн</p>
+
+                <li class="card-item">
+                    <div class="card-tumb">
+                        <img src="./images/img-9.jpg" width="370" height="294" alt="Баскетболисты">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Постер New Orlean vs Golden Star</h3>
+                        <p>Дизайн</p>
+                    </div> 
                 </li>
-                <li>
-                    <img src="./images/img-10.jpg" width="370" height="294" alt="Лого ресторана морской еды">
-                    <h3 class="title-h3">Ресторан Seafood</h3>
-                    <p>Приложение</p>
+
+                <li class="card-item">
+                    <div class="card-tumb">
+                        <img src="./images/img-10.jpg" width="370" height="294" alt="Лого ресторана морской еды">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Ресторан Seafood</h3>
+                        <p>Приложение</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/img-11.jpg" width="370" height="294" alt="Наушники">
-                    <h3 class="title-h3">Проект Prime</h3>
-                    <p>Маркетинг</p>
+
+                <li class="card-item">
+                    <div class="card-tumb">
+                        <img src="./images/img-11.jpg" width="370" height="294" alt="Наушники">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Проект Prime</h3>
+                        <p>Маркетинг</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/img-12.jpg" width="370" height="294" alt="Фото коробок">
-                    <h3 class="title-h3">Проект Boxes</h3>
-                    <p>Приложение</p>
+
+                <li class="card-item">
+                    <div class="card-tumb">
+                        <img src="./images/img-12.jpg" width="370" height="294" alt="Фото коробок">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Проект Boxes</h3>
+                        <p>Приложение</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/img-13.jpg" width="370" height="294" alt="Монитор с сайтом">
-                    <h3 class="title-h3">Inspiration has no Borders</h3>
-                    <p>Веб-сайт</p>
+
+                <li class="card-item">
+                    <div class="card-tumb">
+                        <img src="./images/img-13.jpg" width="370" height="294" alt="Монитор с сайтом">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Inspiration has no Borders</h3>
+                        <p>Веб-сайт</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/img-14.jpg" width="370" height="294" alt="Журнал">
-                    <h3 class="title-h3">Издание Limited Edition</h3>
-                    <p>Дизайн</p>
+
+                <li class="card-item">
+                        <div class="card-tumb">
+                            <img src="./images/img-14.jpg" width="370" height="294" alt="Журнал">
+                        </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Издание Limited Edition</h3>
+                        <p>Дизайн</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/img-15.jpg" width="370" height="294" alt="Бирка">
-                    <h3 class="title-h3">Проект LAB</h3>
-                    <p>Маркетинг</p>
+
+                <li class="card-item">
+                        <div class="card-tumb">
+                            <img src="./images/img-15.jpg" width="370" height="294" alt="Бирка">
+                        </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Проект LAB</h3>
+                        <p>Маркетинг</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/img-16.jpg" width="370" height="294" alt="Работа за ноутбуком">
-                    <h3 class="title-h3">Growing Business</h3>
-                    <p>Приложение</p>
+                
+                <li class="card-item">
+                        <div class="card-tumb">
+                            <img src="./images/img-16.jpg" width="370" height="294" alt="Работа за ноутбуком">
+                        </div>
+                    <div class="card-text">
+                        <h3 class="title-heading">Growing Business</h3>
+                        <p>Приложение</p>
+                    </div>
+                    
                 </li>
             </ul>
-        </section>
+        </div>
     </main>
+
     <footer class="footer">
-        <a class="logo link" href="./index.html"> <span class="style-web">Web</span><span
-                class="style-studio-dark">Studio</span></a>
-        <address class="address">
-            <p class="title-label-dark-bg">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list">
-                <li><a class="link link-footer" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="link link-footer" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container-footer">
+            <a class="logo link" href="./index.html"> <span class="style-web">Web</span><span
+                    class="style-studio-dark">Studio</span></a>
+    
+            <address class="address">
+                <div class="list-address">
+                    <p class="title-label-dark-bg">г. Киев, пр-т Леси Украинки, 26</p>
+    
+                    <ul class="list list-footer">
+                        <li><a class="link link-footer" href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="item-list-address"><a class="link link-footer" href="tel:+380991111111">+38 099 111 11
+                                11</a></li>
+                    </ul>
+                </div>
+    
+            </address>
+    
+        </div>
+    
     </footer>
 </body>
 </html>
